@@ -7,7 +7,7 @@ This deep learning project, developed as part of CSC 587 Final Project for Winte
 
 ## Project Members
 
-<img width="100" height="100" src="./picablu.png" alt="Picablu" align="right">
+<img width="100" height="100" src="./docs/picablu.png" alt="Picablu" align="right">
 
 - Braedan Kennedy (bkenne07@calpoly.edu)
 - Luis David Garcia (lgarc120@calpoly.edu)
