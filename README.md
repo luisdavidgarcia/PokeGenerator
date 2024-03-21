@@ -23,9 +23,57 @@ Utilizing a rich dataset of Pokémon sprites, our goal was to generate original 
 - `Variational Autoencoder Model`: Our VAE model is symmetrically designed with convolutional layers for encoding and decoding the Pokémon sprites with high fidelity.
 - `Latent Diffusion Model`: Following the VAE, this model generates new character sprites by manipulating the latent space.
 - `Evaluation Results`: Includes generated images and an interpolation of the VAE's embedding space.
-- `Conclusions and Future Work`: Provides insights into future enhancements and practical applications of our model.
-- `Report.pdf`: A comprehensive report detailing our methodology, findings, and future directions.
-- `Presentation.pdf`: A presentation overviewing the project highlights and visualizations.
+- [CSC587-FinalProjectReport-PokeGenerator.pdf](./docs/CSC587-FinalProjectReport-PokeGenerator.pdf): A comprehensive report detailing our methodology, findings, and future directions.
+-  [CSC587_PokemonGeneration_Presentation.pdf](./docs/CSC587_PokemonGeneration.pdf): A presentation overviewing the project highlights and visualizations.
+
+## Variational Autoencoder Model
+
+Our Variational Autoencoder (VAE) model features a symmetric architecture with convolutional layers designed to compress Pokémon sprite images into a 512-dimensional latent space. This process preserves the essence of the original images, enabling high-fidelity reconstruction.
+
+
+<p align="center">
+  <img alt="Variational Autoencoder Model" src="./results/vae_model.png">
+  <em>Figure 1: Variational Autoecnoder Model.</em>
+</p>
+
+Key aspects of the VAE model include:
+
+- Encoding images into a latent representation with minimal information loss
+- Utilization of the reparameterization trick for effective latent space sampling
+- Reconstruction of images from latent vectors with high detail and variation
+
+<p align="center">
+  <img alt="Original and Reconstructed Images from Variational Autoencoder" src="./results/vae_results.png">
+  <em>Figure 2: Reconstruction Results of Variational Autoecnoder Model.</em>
+</p>
+
+## Latent Diffusion Model
+
+Building upon the VAE, our Latent Diffusion Model introduces a novel approach to image generation. By manipulating the encoded latent space, the model progressively denoises and refines the generated sprites, resulting in unique and diverse Pokémon characters.
+
+<p align="center">
+  <img alt="Latent Diffusion Model" src="./results/latent_diffusion_model.png">
+  <em>Figure 3: Latent Diffusion Model.</em>
+</p>
+
+Features of the Latent Diffusion Model:
+
+- Temporal transformation of latent vectors through an embedded series of timestamps
+- A multi-layer perceptron (MLP) architecture to reconstruct the encoded information
+- Production of coherent sprite images from structured latent vector refinement
+
+## Evaluation Results
+
+The evaluation phase involved assessing the quality of generated sprites and the effectiveness of latent space interpolation. Our findings highlight the model's capabilities and areas for future improvement.
+
+
+
+<p align="center">
+  <img alt="Generated Sprites from Latent Diffusion" src="./results/latent_diffusion_reuslts.png">
+  <em>Figure 4: Generated sprites using the latent diffusion model.</em>
+  <img alt="Interpolatin of latent vectors in VAE's embedding space" src="./results/interpolation_image.png">
+  <em>Figure 5: Interpolation of latent vectors within the VAE's embedding space.</em>
+</p>
 
 ## Repository Structure
 
