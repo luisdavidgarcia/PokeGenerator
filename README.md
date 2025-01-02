@@ -110,8 +110,3 @@ We express our gratitude to Professor Jonathan Ventura for his invaluable guidan
 ## License
 
 This project is open-source and available under the MIT License. See the LICENSE file for more details.
-
----
-
-The PokeGenerator is an embodiment of collaboration and innovation, seeking to push the boundaries of deep learning and generative modeling.
-
